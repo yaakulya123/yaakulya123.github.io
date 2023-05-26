@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Scroll Animation Story</title>
+  <style>
+    body {
+      height: 2000px;
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    
+    .section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    
+    .section:nth-child(even) {
+      background-color: #007bff;
+    }
+    
+    .section:nth-child(odd) {
+      background-color: #28a745;
+    }
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 4s ease-in, transform 5s ease-in;
+    }
+    
+    .fade-in.active {
+      opacity: 5;
+      transform: translateX(0);
+    }
+    
+    .section-image1 {
+      background-image: url('image1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .section-image2 {
+      background-image: url('image2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image3 {
+      background-image: url('image3.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image4 {
+      background-image: url('image4.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image5 {
+      background-image: url('image5.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image6 {
+      background-image: url('image6.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image7 {
+      background-image: url('image7.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image8 {
+      background-image: url('image8.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image9 {
+      background-image: url('image9.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image10 {
+      background-image: url('image10.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image11 {
+      background-image: url('image11.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image12 {
+      background-image: url('image12.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .section-image13 {
+      background-image: url('image13.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .black-box {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .title {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 16px;
+      font-weight: italic;
+      color: #fff;
+    }
+   .scroll-symbol {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: #fff;
+      animation: scrollSymbolAnimation 1.5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes scrollSymbolAnimation {
+      0% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+      100% {
+        transform: translateX(-50%) translateY(5px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="black-box title">The Enchanted Quest: A Tale of Bravery and Love</div>
+  <div class="section section-image1">
+    <div class="black-box fade-in">Once upon a time,</div>
+  </div>
+  <div class="section section-image2">
+    <div class="black-box fade-in">in a faraway land,</div>
+  </div>
+  <div class="section section-image3">
+    <div class="black-box fade-in">there was a brave knight</div>
+  </div>
+  <div class="section section-image4">
+    <div class="black-box fade-in">on a quest to rescue</div>
+  </div>
+  <div class="section section-image5">
+    <div class="black-box fade-in">the captured princess.</div>
+  </div>
+  <div class="section section-image6">
+    <div class="black-box fade-in">He faced many challenges</div>
+  </div>
+  <div class="section section-image7">
+    <div class="black-box fade-in">and battled fierce creatures</div>
+  </div>
+  <div class="section section-image8">
+    <div class="black-box fade-in">to reach the dark castle, where the princess was held.</div>
+  </div>
+  <div class="section section-image9">
+    <div class="black-box fade-in">With his sword in hand,</div>
+  </div>
+  <div class="section section-image10">
+    <div class="black-box fade-in">he fought valiantly</div>
+  </div>
+  <div class="section section-image11">
+    <div class="black-box fade-in">and defeated the evil sorcerer.</div>
+  </div>
+  <div class="section section-image12">
+    <div class="black-box fade-in">Finally, he rescued the beautiful princess</div>
+  </div>
+  <div class="section section-image13">
+    <div class="black-box fade-in">and they lived happily ever after.</div>
+  </div>
+ 
+  <div class="scroll-symbol">
+    &darr;
+  </div>
+
+  <audio src="music.mp3" autoplay loop></audio>
+
+  <script>
+    
+    window.addEventListener('scroll', fadeInElements);
+    
+    function fadeInElements() {
+      const sections = document.querySelectorAll('.section');
+      const lastSection = sections[sections.length - 1];
+      
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          section.querySelector('.fade-in').classList.add('active');
+        }
+      }
+      
+      const rect = lastSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const scrollSymbol = document.querySelector('.scroll-symbol');
+      
+      if (rect.top <= windowHeight && rect.bottom >= 0) {
+        scrollSymbol.style.display = 'none';
+        lastSection.querySelector('.black-box').innerHTML = 'and they lived happily ever after.';
+      } else {
+        scrollSymbol.style.display = 'block';
+        lastSection.querySelector('.black-box').innerHTML = '';
+      }
+    }
+  </script>
+</body>
+</html>
