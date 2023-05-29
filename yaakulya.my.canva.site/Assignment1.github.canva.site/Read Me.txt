@@ -1,0 +1,24 @@
+Read Me: 
+
+The availability of the GitHub link may vary, and there might be instances where it may not be accessible. To ensure a permanent and consistent access, here is a Canva link that will always be available: yaakulya.my.canva.site
+
+Documentation: 
+
+Project Name: DISCOVER NYUAD: A VISUAL JOURNEY
+
+
+Project Description: Project DISCOVER NYUAD is a multimedia project that aims to provide an immersive and engaging experience of exploring the New York University Abu Dhabi (NYUAD) campus through a 1 minute film. The overall concept and theme revolve around showcasing the vibrant and diverse aspects of NYUAD's academic environment, cultural exchange, and architectural marvels. The project strives to create a sense of curiosity, inspiration, and connection with the university's community and educational opportunities.
+
+Experience: The goal was to create a visually stunning and informative film that captures the essence of NYUAD while incorporating interactive elements on a dedicated web page. To implement the concept, the following steps were taken:
+
+Planning: The project began with thorough research about NYUAD, including its history, programs, and unique features. This helped in understanding the core values and the story we wanted to portray through the film.
+
+Filming: Actual filming took place on the NYUAD campus, capturing the key locations, architectural highlights, and interactions with students and faculty members.
+
+Web Development: The web page was developed to host and debut the onw minute film. The design incorporated the chosen font, color scheme, and interactive elements, including the slider to control the page's look. User testing was conducted to ensure smooth functionality and optimal user experience.
+
+
+Reflection/Evaluation: Throughout the process, the project aimed to create an immersive and captivating experience that showcases the uniqueness of NYUAD. Upon evaluating the final working version, it was found that the expectations and goals set during the initial concept were successfully met. The film effectively captured the vibrant atmosphere of NYUAD's campus, the diverse community, and the opportunities for academic growth.
+
+
+In conclusion, Discover NYUADsuccessfully created a visually appealing and informative film, supported by a well-designed web page. The project achieved its goal of providing an immersive tour experience and effectively conveying the unique aspects of NYU Abu Dhabi's educational environment and cultural richness.
