@@ -17,6 +17,58 @@
             z-index: -1;
             opacity: 0.7; /* Adjust the opacity value as needed */
         }
+
+        .section {
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 24px;
+        }
+
+
+        .section-image1 {
+            background-image: url('image1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .section-image2 {
+            background-image: url('image2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-image3 {
+            background-image: url('image3.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-image4 {
+            background-image: url('image4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-image5 {
+            background-image: url('image5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-image6 {
+            background-image: url('image6.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-image7 {
+            background-image: url('image7.jpg');
+            background-size: cover;
+            background-position: center;
+        }
         
         #content {
             position: absolute;
@@ -29,23 +81,23 @@
         }
         
         h1 {
-            font-size: 62px;
+            font-size: 48px;
         }
         
         p {
-            font-size: 23px;
+            font-size: 24px;
         }
         
         #start-button {
             position: fixed;
-            bottom: 150px;
+            bottom: 20px;
             left: 50%;
-            transform: translateX(-40%);
+            transform: translateX(-50%);
             background-color: #fff;
             color: #000;
             padding: 10px 20px;
-            font-family: Italic, times-new-roman;
-            font-size: 40px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
             border: none;
             cursor: pointer;
         }
@@ -58,44 +110,46 @@
     </video>
 
     <div id="content">
-        <h1>Tim - The Time Traveller</h1>
-        <p>Boredom to Adventure - A choose-your-own journey through time!</p>
+        <h1>Welcome to my website</h1>
+        <p>This is an example of a webpage with a video background.</p>
     </div>
     
-    <audio autoplay loop>
-        <source src="bgsound.mp3" type="audio/mpeg">
-        <!-- If the browser doesn't support MP3 format, you can provide alternative sources here -->
-    </audio>
-
-    <button id="start-button">Start</button>
-
-    <script>
-        // Adjust the size of the video element to fit the window
-        function resizeVideo() {
-            var video = document.getElementById('background-video');
-            video.style.height = window.innerHeight + 'px';
-            video.style.width = window.innerWidth + 'px';
-        }
-
-        // Call the resize function whenever the window is resized
-        window.onresize = resizeVideo;
-
-        // Initial call to resizeVideo to set the size of the video element
-        resizeVideo();
-    </script>
-</body>
-
-<body>
-    <video id="background-video" autoplay muted loop>
-        <source src="titlepanel.mp4" type="video/mp4">
-        <!-- If the browser doesn't support MP4 format, you can provide alternative sources here -->
-    </video>
-
-    <div id="content">
-        <h1>Tim - The Time Traveller</h1>
-        <p>Boredom to Adventure - A choose-your-own journey through time!</p>
+    <div class="section">
+    <div class="fade-in"></div>
     </div>
-    
+
+    <div class="section section-image1">
+    <div class="black-box fade-in"></div>
+    </div>
+
+
+
+    <div class="section section-image2">
+    <div class="black-box fade-in"></div>
+    </div>
+
+    <div class="section section-image3">
+    <div class="black-box fade-in"></div>
+    </div>
+
+    <div class="section section-image4">
+    <div class="black-box fade-in"></div>
+    </div>
+
+
+    <div class="section section-image5">
+    <div class="black-box fade-in"></div>
+    </div>
+
+
+    <div class="section section-image6">
+    <div class="black-box fade-in"></div>
+    </div>
+
+    <div class="section section-image7">
+    <div class="black-box fade-in"></div>
+    </div>
+
     <audio autoplay loop>
         <source src="bgsound.mp3" type="audio/mpeg">
         <!-- If the browser doesn't support MP3 format, you can provide alternative sources here -->
