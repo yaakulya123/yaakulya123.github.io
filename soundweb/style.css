@@ -1,0 +1,240 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden; 
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.homepage{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* parallax */
+.homepage video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+
+.header{
+        width: 80%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        
+        
+      
+    }
+
+.header h1{
+    font-size: 95px;
+}
+
+/* *********************************************************
+  Button
+********************************************************* */
+
+.header a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3;
+   }
+   
+.header a:hover {
+    background-color: #fff;
+    color: #000
+}
+   
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background-clip{
+        width: auto%;
+        height: 100%;
+    }
+}
+
+
+/* PODCAST */
+#InterviewPage{
+    height: 100%;
+    width:100%;
+    background-color: rgba(232, 232, 232);
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+/* MULTIPLE CHOICE QUESTIONS */
+
+.Quiz{
+    height: 100%;
+    width:100%;
+    /* background-color: rgba(159, 108, 108, 0.4); */
+    background-image: linear-gradient(rgba(78, 71, 71, 0.4),rgba(78, 71, 71, 0.4)),url("amazon.png");
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MCQ{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    top:50%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.MCQ h1{
+    font-size: 25px;
+    color: #004d0e;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Q{
+    padding: 20px 0;
+}
+
+.Q h2{
+    font-size: 18px;
+    color: #004d0e;
+    font-weight: 600;
+}
+
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background: #222;
+    color: #fff;
+}
+.answer-selected .btn {
+    pointer-events: none;
+  }
+  
+  .correct {
+    background-color: rgb(52, 159, 52,0.7);
+  }
+  
+  .incorrect {
+    background-color: rgb(227, 54, 54,0.7);
+  }
+
+  /* CREDITS */
+
+
+
+.credit1{
+    height: 100%;
+    width:100%;
+    background-image: linear-gradient(rgba(78, 71, 71, 0.4),rgba(78, 71, 71, 0.4)),url("rainforest.png");
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit1 .option {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.option li {
+    list-style: none;
+    color: #face30;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.option li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.option li span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(78, 71, 71, 0.4),rgba(78, 71, 71, 0.4)),url("rainforest.png");
+    border-left: 2px solid #face30;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing{
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
