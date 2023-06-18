@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>RESPONSIVE PERSONAL PORTFOLIO WEBSITE </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#home" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <section class="main">
+            
+            <div class="home-content">
+
+                <div class="content_1">
+                    <h3>Hello,It's Me</h3>
+                    <h1>Yaakulya Sabbani</h1>
+                    <!-- <h3>And I'm a <span >Interactive Media Student / Cyber Security Engineer/ Programmer/ Blogger</span></h3> -->
+
+                    <h3>And I'm a <span class="multiple-text"></span></h3>
+
+                    <div class="social-media">
+                        <a href=" https://github.com/yaakulya123/yaakulya123.github.io"><i class='bx bxl-github'></i></a>
+                        <a href="https://mail.google.com/chat/u/1/#chat/dm/xd2AYUAAAAE"><i class='bx bxs-envelope'></i></a>
+                        <a href=" https://www.instagram.com/yaakulya_me/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/yaakulya-sabbani/"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+
+                    <a href="C:\Users\shrey\Downloads\B.-Software-Engineer.docx" class="btn">Download CV</a>
+                </div>
+
+            </div>
+
+            <div class="home-img">
+                <div class="content_img">
+                    <img src="output/homeimage.png">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            
+            <div class="about-img">
+                <img src="output/aboutme.png">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About<span>Me</span></h2>
+                <h3>Frontend Developer</h3>
+                
+                <p>
+                    Hello, I am an Interactive student currently pursuing freshman at NYU Abu Dhabi.
+                    My interests include blogging, video game developing and programming. 
+                    As a CWAPT-certified professional, I specialize in web application penetration testing. 
+                    I am passionate about staying updated with the latest technologies and trends in the industry.
+                    In my spare time, I enjoy reading books on technology, especially ethical hacking and cybersecurity.
+                    I have gained valuable experience in the software tech industry and love sharing my knowledge through engaging content.
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li>
+                            <span>
+                                Programming & Scripting Languages
+                            </span><br>Python, C, Java, Html, Java Script, CSS.
+                        </li>
+                        <li>
+                            <span>Cyber Security </span><br>Owasp Zap, Metasploit, Burp Suite, Web Pentesting, Virtual Machines, Accutenux, Wireshark.
+
+                        </li>
+                        <li>
+                            <span>Digital Marketing </span><br>Content Creation, Branding, Video Production, Advertising via SEO, Community Management.
+                        </li>
+                        <li>
+                            <span>Languages </span><br>English, Telugu, Hindi, French, German.
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>  2023 - Current</span><br>Unity Gaming Pvt LTD | Remote Internship</li>
+                        <li><span>2022- 2023</span><br>NYUAD Robotics Department | Social Media Manager & Designer</li>
+                        <li><span>2021-2022</span><br>Cyber Jagrithi Foundation for Women and Children | Blogger & Content Creator</li>
+                        <li>
+                            <span>  2020-2021</span>
+                            <br>YKS IT Services & Solutions | Pentresting Testing Engineer (Security Testing)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2026</span><br>New York University Abu Dhabi (NYUAD)| B.A in Interactive Media</li>
+                        <li><span>2021</span><br>Sri Chaitanya Jr. College | Division in Maths, Physics & Chemistry (MPC). </li>
+                        <li><span>2019</span><br>FIITJEE International College | 10th Standard in the Science Department. </li>
+                    </ul>
+                </div>
+                
+                
+                
+            </div>         
+        </section>
+        
+        <section class="services"id="services">
+            <h2 class="heading">Our<span>Services</span></h2>
+
+            <div class="services-container">
+                
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>           
+                    <h3>Website Vulnerability Testing</h3>
+                    <div class="scroll_1">
+                        <p>
+                            I'm a website vulnerability finder, passionate about securing online platforms. 
+                            With an eagle eye for vulnerabilities, 
+                            I strive to protect websites and ensure a safer digital environment.
+
+                        </p>
+                    </div>
+                    <a href="#contact"class="btn">Connect</a>
+                </div>
+        
+                <div class="services-box">
+                    <i class='bx bx-crop' ></i>
+                    <h3> Content Writing & Blogging</h3>
+                    <div class="scroll_2">
+                        <p> I am a passionate content writer and blogger, 
+                        dedicated to creating engaging and informative articles that captivate readers' attention. 
+                        With a flair for storytelling and a love for research, I bring ideas to life through compelling written content..</p>
+                    </div>
+                    <a href="#contact"class="btn">Connect</a>
+                </div>
+            
+                <div class="services-box">
+                    <i class='bx bxl-instagram-alt' ></i>
+                    <h3>Social Media & Management</h3>
+                    <div class="scroll_3">
+                        <p>
+                            Experienced Social Media Manager with a creative flair for engaging content creation
+                            and a proven track record of driving audience growth and brand visibility. 
+                            Passionate about harnessing the power of social media to connect with audiences and 
+                            build impactful online communities.
+
+                        </p>
+                    </div>
+                    <a href="#contact"class="btn">Connect</a>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="portfolio"id="portfolio">
+            <h2 class="heading">Latest<span>Project</span></h2>
+
+            <div class="portfolio-container">
+
+                <div class="portfolio-box">
+                    <img style="height: 500px;" src="myproject/image/jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg"alt="">
+                    <div class="portfolio-layer">
+                        <h4>DISCOVER NYUAD</h4>
+                        <p>
+                            Project “DISCOVER NYUAD” is a multimedia project that aims to provide an immersive and engaging
+                            experience of exploring the New York University Abu Dhabi (NYUAD) campus through a one minute film.
+                            The overall concept and theme revolve around showcasing the vibrant and diverse aspects of NYUAD's academic environment, 
+                            cultural exchange, and architectural marvels. The project strives to create a sense of curiosity, inspiration,
+                            and connection with the university's community and educational opportunities.
+                        </p>
+                        <a href="https://yaakulya.my.canva.site/"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img style="height:500px"src="myproject/image/austin-poon-JO_S6ewBqAk-unsplash.jpg"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Boredom to Adventure: Time Travel Journey</h4>
+                        <p>
+                            This project is an enchanting 2D cartoon adventure that centers around a young protagonist endowed
+                            with the extraordinary ability to travel through time. Crafted with meticulous detail and brought to 
+                            life using the creative prowess of Adobe Illustrator, this captivating journey aims to immerse the viewer
+                            in a magical experience that taps into the wondrous realm of time travel, as seen through the eyes of a
+                            child.
+                            
+                        </p>
+                        <a href="https://yaakulya123.github.io/Comic/"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img style="height: 500px;" src="myproject/image/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Sonic Serenity: A Journey Through the Amazon Rainforest : </h4>
+                        <p>
+                            This project creates an immersive audio journey through the Amazon Rainforest, showcasing its diverse soundscape and emphasizing the importance of conservation. Experience the beauty and fragility of nature, transporting listeners to this magical environment, evoking awe and wonder.
+                        </p>
+                        <a href="https://yaakulya123.github.io/soundweb/"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img style="height: 500px;" src="myproject/image/kevin-canlas-QYHehJ9Iovs-unsplash.jpg"alt="">
+                    <div class="portfolio-layer">
+                        <h4>Rhythm Perspectives: A Student Guide to Drumming:    </h4>
+                        <p>
+                            Our project demonstrates a three-step guide to playing a basic drum groove, accompanied by a video featuring a drummer sharing his personal journey. Hosted on an interactive webpage, users can ask questions and engage in an immersive experience while learning the art of drumming.
+                        </p>
+                        <a href="https://yaakulya123.github.io/Video_Assignment/"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+           <h3> Let’s Discuss Your Project </h3>
+           <p> I'm always open to discussing new opportunities, positions or projects.</p>
+
+            <form action="#" name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name">
+                    <input type="email" name="Email Address" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile Number" placeholder="Mobile Number">
+                    <input type="text" name="Email Subject" placeholder="Email Subject">
+                </div>
+                <textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            <span id="msg"></span>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+              <center>  <p>Copyright &copy; 2023 by Yaakulya | All Rights Reserved.</p></center>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+    </body>
+</html>
